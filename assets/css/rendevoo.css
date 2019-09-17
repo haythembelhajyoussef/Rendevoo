@@ -1,0 +1,685 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Landing Sumo - Theme 20
+ * URL: http://LandingSumo.com
+ * Version: 1.0
+ * Exclusive Freebie for BlackTie.co
+ */
+
+/*	################################################################
+        1. GENERAL STRUCTURES
+################################################################# */
+
+/* Import fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+* { 
+    margin: 0;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+} 
+body { 
+    background: #fff; 
+    margin: 0; 
+    color: #5a5a5a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+
+p { 
+    padding: 0; 
+    margin-bottom: 12px; 
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 16px; 
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: white; 
+    margin-top: 10px; 
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+}
+.centered {text-align: center}
+.mt {margin-top: 50px;}
+.mb {margin-bottom: 50px;}
+.mtb {margin-top: 50px; margin-bottom: 50px;}
+.mtb2 { margin-top: 100px; margin-bottom: 100px;}
+.ptb {padding-top: 80px; padding-bottom: 80px;}
+
+.clear {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    width:100%;
+}
+::-moz-selection  {
+    color: #fff;
+    text-shadow:none;
+    background:#2B2E31;
+}
+::selection {
+    color: #fff;
+    text-shadow:none;
+    background:#2B2E31;
+}
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a { 
+    padding: 0;
+    margin: 0;
+    text-decoration: none; 
+    -webkit-transition: background-color .4s linear, color .4s linear;
+    -moz-transition: background-color .4s linear, color .4s linear;
+    -o-transition: background-color .4s linear, color .4s linear;
+    -ms-transition: background-color .4s linear, color .4s linear;
+    transition: background-color .4s linear, color .4s linear;
+    color: #1abc9c;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    color:#696E74;
+}
+
+.nopadding {
+    padding: 0px !important;
+    margin: 0px;
+}
+
+
+/* FORM CONFIGURATION */
+
+.inputt {
+    font-size: 16px;
+    min-height: 40px;
+    border-radius: 25px;
+    line-height: 20px;
+    padding: 15px 30px 16px;
+    border: 1px solid #b9b9af;
+    margin-bottom: 10px;
+    background-color: #fff;
+    opacity: 0.9;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.subscribe-input {
+    float: left;
+    width: 35%;
+    text-align: left;
+    margin-right: 2px;
+}
+
+@media screen and (max-width: 767px) {
+    .subscribe-input {
+        width: 100%;
+    }
+}
+
+.subscribe-submit {
+    right: 0;
+}
+
+.btn-download {
+    background: #FDE3A7;
+}
+
+/*Buttons Configuration */
+.btn-conf {
+    border-radius: 50px;
+    margin-right: 15px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 18px 28px 17px 28px;
+}
+
+.btn-conf-2 {
+    border-radius: 50px;
+    margin-right: 15px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px 28px 11px 28px;
+    margin-top: 20px;
+}	
+
+.btn-Assertive {
+    background: #EF473A;
+    color: white
+}
+
+.rechmore{
+    float: right;
+    width: 72%;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+/* HEADER SECTION */
+.backg{
+    background: url(http://localhost/rendezVoo/assets/img/back.jpg) no-repeat center top;
+
+
+    background-position: center center;
+    min-height: 100%;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+#hoa .logo {
+    top: 0px;
+    left: 530px;
+    font-size: 18px;
+    font-weight: 9000;
+    position:absolute; 
+}
+
+#hoa .social {
+    top: 30px;
+    right: 45px;
+    font-size: 20px;
+    position: absolute;
+}
+
+#hoa .social i {
+    margin-left: 20px;
+}
+
+#hoa .social a {
+    color: white;
+}
+
+#hoa h1 {
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+}
+
+
+
+/* HEADER SECTION */
+#h {
+    background: url(http://localhost/rendezVoo/assets/img/header.jpg) no-repeat center top;
+
+
+    background-position: center center;
+    min-height: 700px;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#h .logo {
+    top: 0px;
+    left: 530px;
+    font-size: 18px;
+    font-weight: 900;
+    position:absolute; 
+}
+
+#h .social {
+    top: 30px;
+    right: 45px;
+    font-size: 20px;
+    position: absolute;
+}
+
+#h .social i {
+    margin-left: 20px;
+}
+
+#h .social a {
+    color: white;
+}
+
+#h h1 {
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+}
+
+/* Store Links */
+.store img {
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+/* SEP */
+#sep {
+    background: url(http://localhost/rendezVoo/assets/img/pro.jpg) no-repeat center top;
+    padding-top: 90px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 450px;
+    width: 100%;
+    color: white;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#sep h4 {
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+/* Pricing Tables */
+.price-table {
+    border: 2px solid #5a5a5a;
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin: 5px; 
+}
+
+.price-table .p-head {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 80px;
+    border-bottom: 2px solid #ccc;
+}
+
+.price-table .p-body .features li {
+    color: #333333;
+    border-bottom: 2px solid #ccc;
+    padding: 24px 0px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.p-body .price .detail {
+    font-weight: 700;
+    font-size: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.p-body .price .sub {
+    font-size: 18px;
+    color: #ccc;
+    position: relative;
+    bottom: 10px;
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* SPONSORS */
+#g {
+    background: #f2f2f2;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.sponsor img {
+    max-width: 140px;
+    max-height: 60px;
+    vertical-align: middle;
+}
+
+.sponsor .col-sm-2 {
+    height: 80px;
+    line-height: 80px;
+}
+
+/* Assertive SECTION - TESTIMONIAL */
+
+#Assertive {
+    padding-top: 90px;
+    padding-bottom: 60px;
+    min-height: 300px;
+    background: #EF473A;
+    color: white;
+}
+#barAssertive{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    min-height: 60px;
+    background: #EF473A;
+    color: white;
+}
+#barMenu{
+    padding-top: 10px;
+    min-height: 60px;
+    background: #EF473A;
+    color: white;
+}
+#barrech{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    min-height: 60px;
+    background: gray;
+    color: white;
+    opacity: 0.5;
+   border-radius: 40px;
+}
+
+#bartop{
+    padding-top: 00px;
+    padding-bottom: 0px;
+    min-height: 0px;
+    background: #EF473A;
+    color: white;
+    opacity: 0.3;
+
+}
+
+#green tgr {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* FOOTER */
+#f {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background: #2f2f2f;
+    color: white;
+}
+
+#f h5 {
+    margin-top: 130px;
+    letter-spacing: 1px;
+}
+
+#f i {
+    font-size: 45px;
+    margin: 15px;
+}
+
+#f a {
+    color: #b9b9b9;
+}
+
+#f a:hover {
+    color: #03C9A9;
+}
+
+#loading {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#calendar {
+	max-width: 900px;
+	margin: 40px auto;
+	padding: 0 10px;
+}
+/* Menu Profile */
+#menu, #menu ul /* Liste */     
+{
+        padding : 0; /* pas de marge intérieure */
+        margin : 0; /* ni extérieure */
+        list-style : none; /* on supprime le style par défaut de la liste */
+        line-height : 21px; /* on définit une hauteur pour chaque élément */
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
+}
+
+#menu /* Ensemble du menu */
+{
+        font-weight : bold; /* on met le texte en gras */
+        font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+        font-size : 12px; /* hauteur du texte : 12 pixels */
+}
+
+#menu a /* Contenu des listes */
+{
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+        padding : 0; /* aucune marge intérieure */
+        background : #EF473A; /* couleur de fond */        
+        color : #fff; /* couleur du texte */
+        text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+        width : 150px; /* largeur */
+}
+
+#menu li /* Elements des listes */      
+{ 
+        float : left; 
+        /* pour IE qui ne reconnaît pas "transparent" */
+        border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+html>body #menu li
+{
+        border-right: 1px solid transparent ; /* on met une bordure transparente à droite de chaque élément */
+}
+
+#menu li ul /* Sous-listes */
+{ 
+        position: absolute; /* Position absolue */
+        width: 150px; /* Largeur des sous-listes */
+        left: -999em; /* Hop, on envoie loin du champ de vision */
+		background : white; /* couleur de fond */     
+}
+
+
+#menu li ul li /* Éléments de sous-listes */
+{
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+        border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous liste */
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+html>body #menu li ul li                
+{
+        border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque élément */
+}
+
+#menu li ul ul 
+{
+        margin    : -22px 0 0 144px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+        border-left     : 1px solid #fff ; /* Petite bordure à gauche pour ne pas coller ... */      
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" ... je me répète ;-) */
+html>body #menu li ul ul                
+{
+        border-left     : 1px solid transparent ; /* on met une bordure transparente sur la gauche de chaque élément */
+}
+#menu a:hover /* Lorsque la souris passe sur un des liens */    
+{
+        color: #000; /* On passe le texte en noir... */
+        background: #fff; /* ... et au contraire, le fond en blanc */
+}
+#menu li:hover ul ul, #menu li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+{
+        left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+}
+
+#menu li:hover ul, #menu li li:hover ul, #menu li.sfhover ul, #menu li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
+{
+        left: auto; /* Repositionnement normal */
+        min-height: 0; /* Corrige un bug sous IE */
+}
+#menu li > a:not(:only-child):after { 
+    content: '\00a0\00a0▼'; /* add a little spacing so it's not right next to the text */
+    font-size: 1.3rem; /* adjust font size so it looks better */
+    vertical-align: middle; /* vertical align to middle */
+}
+#nb {
+    display: inline-block;
+    margin-right: 10px;
+    background: #FF7E00;
+    color: #fff;
+    border-radius: 60px;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.return-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: #EF473A;
+    width: 40px;
+    height: 40px;
+    /* padding-top:	 3px; */
+    box-sizing: border-box;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 999;
+    text-align: center;
+}
+  /* R�sultats de recherche */
+            .map {width:100%;height:300px;border:1px solid #666;background:#fff;margin-top:37px;}
+
+            .gmap-flag {color:#fff;}
+            .results_search_line {width:100%;border-top:1px solid #ccc;padding:20px 0px;}
+            #search-results-container .results_search_line:first-child {border-top:0px;}
+            .results_search_line .part-infos {width:30%;display:inline-block;vertical-align:top;}
+            .results_search_line .part-infos .titre {margin-bottom:15px;}
+            .results_search_line .part-infos .titre .nb {display:inline-block;margin-right:10px;background:#FF7E00;color:#fff;border-radius:60px;width:30px;height:30px;padding-top:5px;text-align:center;font-weight:bold;}
+            .results_search_line .part-infos .titre .nom {font-weight:bold;display:inline-block;font-size:16px;}
+            .results_search_line .part-infos .titre .distance {display:inline-block;float:right;margin-right:10px;font-size:12px;color:#666;margin-top:7px;}
+            .results_search_line .part-infos .photo {display:inline-block;margin-right:10px;}
+            .results_search_line .part-infos .photo img {border:1px solid #ccc;width:70px;height:auto;}
+            .results_search_line .part-infos .infos {display:inline-block;vertical-align:top;font-size:12px;width:250px;}
+            .results_search_line .part-infos .infos .metier {font-weight:bold;}
+            .results_search_line .part-infos .infos .adresse {color:#666;margin:5px 0px 10px 0px;}
+            .results_search_line .part-infos .infos .btn {display:inline-block;background:#FF7E00;color:#FFF;padding:5px 10px;}
+            .results_search_line .part-infos .infos .btn:hover {text-decoration:none;background:#FC9E42;}
+            .results_search_line .part-infos .infos .btn span {margin-right:10px;}
+
+            .agenda_part {text-align:center;display:inline-block;width:69%;background:#f6ecdc;min-height:130px;vertical-align:top;padding:5px;position:relative;}
+            .agenda_part .select2-container {min-width:200px;}
+            .agenda_part .btn-navigate {text-align:center;font-size:25px;color:#666;display:inline-block;}
+            .agenda_part .btn-navigate:hover {text-decoration:none;color:#000;}
+            .agenda_part .btn-navigate.disabled {color:#ccc;cursor:default;}
+            .agenda_part .day {display:inline-block;width:11%;vertical-align:top;margin:0px 5px;border:1px solid #999;min-height:160px;background:#fff;}
+            .iframe .agenda_part .day {min-height:165px !important;}
+            .agenda_part .day .titre {background:#333;color:#fff;width:100%;padding:5px;text-align:center;font-size:12px;}
+            .agenda_part .hours {position:relative;line-height:21px;font-size:12px;padding:5px 0px;}
+            .agenda_part .hours a:not(.more-details) {display:block;}
+            .agenda_part .more-details {font-size:20px;color:#ff7e07;position:absolute;left:50%;margin-left:-13px;margin-top:-4px;}
+            .agenda_part .more-details:hover {opacity:0.8;}
+            .agenda_part .closed-day {opacity:0.7;}
+            .agenda_part .closed-day .titre {background:#ccc;color:#666;}
+            .agenda_part .closed-day .close-text {padding-top: 50%;margin-top:-10px;font-weight:bold;color:#666;}
+
+            .agenda_part .informations-rdv {padding:10px;}
+            .agenda_part .informations-rdv h2 {margin-bottom:15px;font-size:20px;}
+            .agenda_part .informations-rdv tr td {padding:10px;}
+            .agenda_part .informations-rdv tr td .nb {display: inline-block;background: rgb(0, 0, 0) none repeat scroll 0% 0%;background:#ff7e07;color:#FFF;width: 25px;border-radius: 30px;text-align: center;height: 25px;padding-top: 3px;font-weight: bold;}
+            .agenda_part .informations-rdv2 {margin:0px auto 10px auto;}
+
+            .agenda_part .day.noagenda {opacity:0.3;}
+            .no-resa-online-cadre {position:absolute;z-index:9;width:100%;}
+            .no-resa-online {background: #999;display: inline-block;padding: 10px 20px;margin-top: 60px;color: #Fff;font-weight: bold;display:inline-block;}
+
+            .agenda-highlight {position:fixed;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,0.5);z-index:99999;display:none;}
+            .calendar-highlight .agenda_part, .calendar-highlight.agenda_part {position:relative;z-index:999999;}
+
+
+
+            .agenda_part {
+                text-align: center;
+                display: inline-block;
+                width: 69%;
+                background: #f6ecdc;
+                min-height: 130px;
+                vertical-align: top;
+                padding: 5px;
+                position: relative;
+            }
+        
+            .textleft {text-align:left;}
+			
+.nav-tabs {
+    margin-bottom: 15px;
+}
+.sign-with {
+    margin-top: 25px;
+    padding: 20px;
+}
+div#OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    background: #DFDFDF;
+}

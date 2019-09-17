@@ -1,0 +1,6 @@
+{
+    "require": {
+        "doctrine/orm": "*",
+        "phpmailer/phpmailer": "^5.2"
+    }
+}

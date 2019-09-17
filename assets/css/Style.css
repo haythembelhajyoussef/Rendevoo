@@ -1,0 +1,137 @@
+input{
+    color:black;
+}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    /*background: url('../img/header.jpg') no-repeat;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    transition: 1s opacity;
+}
+.scrollparallox{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    /*background: url('../img/header.jpg') no-repeat;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    transition: 1s opacity;
+}
+.polina { 
+    float:right;
+    font-weight:100%; 
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 6rem;
+    width: 100%;
+    height: auto;
+    margin:6rem;
+    font-size: 1.6rem;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.clear:after {content:".";display:block;clear:both;height:0;visibility:hidden;}
+.fils {float:left;width:50%;}
+.bgimg-1 {
+    /*background-image: url("../img/header.jpg");*/
+    min-height: 100%;
+}
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    /* opacity: 0.65; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg-2 {
+    background-image: url("../img/pro.jpg");
+    min-height: 800px;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+/* formulaire de connexion */
+.user_interactions {   
+    position: fixed;
+    background: rgba(255,255,255,0.85);
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    /* top: -500px; */
+    z-index: 9;
+    -moz-box-shadow: 0px 0px 5px #999;
+    -webkit-box-shadow: 0px 0px 5px #999;
+    box-shadow: 0px 0px 5px #999;
+    margin-top : 30px;
+}
+.user_interactions .titre {
+    width: 100%;
+    padding: 5px 0px 0px 0px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.user_interactions .titre .icon-cancel-1 {
+    cursor: pointer;
+    font-size: 30px;
+    right: 0;
+    top: 0;
+}
+.both {clear:both;}
+/* formulaire d'inscription */
+.user-inscription {
+    width: 700px;
+    margin-left: -350px;
+    background: #fff;
+    padding: 10px 15px;
+}
+.user_interactions {
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,0.85);
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    top: -500px;
+    z-index: 9;
+    -moz-box-shadow: 0px 0px 5px #999;
+    -webkit-box-shadow: 0px 0px 5px #999;
+    box-shadow: 0px 0px 5px #999;
+}
+input {
+    line-height: normal;
+}
